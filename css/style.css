@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Balsamiq+Sans:wght@700&family=Kanit:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: url("../Bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#board {
+    background: linear-gradient(rgb(95, 202, 95), rgb(197, 197, 110));
+    /* vmin is min of width or height  &  vmax is max of width or height */
+    margin-top: 35px;
+    width: 88vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+#scoreBox {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 28px;
+}
+
+#highscoreBox {
+    position: absolute;
+    top: 38px;
+    right: 139px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 28px;
+}
+
+.head {
+    background-color: rgb(175, 15, 15);
+    border: 0.25vmin solid purple;
+    border-radius: 10px;
+    transform: scale(1.02);
+}
+
+.food {
+    background-color: rgb(18, 35, 98);
+    border: 0.25vmin solid black;
+    border-radius: 8px;
+}
+
+.snake {
+    background-color: purple;
+    border: 0.5px solid white;
+    border-radius: 15px;
+}
